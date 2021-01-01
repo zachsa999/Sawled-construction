@@ -142,9 +142,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+nav {
+  margin-top: 50;
+  margin-bottom: 50;
+  color: #000;
+  background-color: skyblue;
+}
+
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 abbr[title],
@@ -219,14 +226,14 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #777777;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #f39910;
   text-decoration: underline;
 }
 
@@ -679,6 +686,9 @@ pre code {
       flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
 }
 
 .no-gutters {
