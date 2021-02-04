@@ -379,7 +379,7 @@
 	/* Home Banner Area css
 	============================================================================================ */
     .home_banner_area .banner_inner .banner_content {
-		padding: 30px 15px;
+		padding: 30px 0px;
 		margin-top: 0px;
 	}
 	.banner_content .white_btn {
