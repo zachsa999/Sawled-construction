@@ -36,7 +36,6 @@
 .builder_area{
 	overflow: hidden;
 	display: block;
-	max-width: 960px;
 }	
 .builder_inner{
 	.builder_item{
@@ -53,6 +52,18 @@
 	&:before{
 		content: "";
 		background: rgba(243, 153, 16, 0.50);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: all 300ms ease;
+		transform: scale(0.95);
+	}
+	.builder_item_change{
+		content: "";
+		background: rgba(243, 153, 16, 1);
 		position: absolute;
 		left: 0px;
 		top: 0px;
