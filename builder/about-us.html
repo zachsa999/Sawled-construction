@@ -99,7 +99,7 @@
         <!--================Counter Area =================-->
        
 		<!--================End Team Area =================-->
-		<seciton class="builder_area">
+		<!-- <seciton class="builder_area">
         	<div class="main_title">
         		<h2>Some Projects</h2>
         		<p>Who are in extremely love with eco friendly system.</p>
@@ -144,7 +144,7 @@
 					<img src="img/builder/ice_stop_tool.jpg" alt="">
 					<div class="hover">
 						<h4>Ice Stop</h4>
-						 <p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+						 <p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p> -->
         
         <!--================Testimonials Area =================-->
         <section class="testimonials_area p_120">
@@ -188,10 +188,11 @@
         <!--================End Clients Logo Area =================-->
         
         <!--================ start footer Area  =================-->	
-        <footer class="footer-area p_120">
+        <div id="section1" style="padding-bottom: 70px;"></div>
+        <footer style="padding-bottom: 5px;" class="footer-area p_120">
             <div class="container">
 
-                <div class="row">
+                <div class="row" style="padding-bottom: 15px; ">
                     <div class="col-lg-6  col-md-6 col-sm-6">
                         <div class="single-footer-widget ab_wd">
                             <h6 class="footer_title" style="margin: 0px 0px 3px; text-align: center;">Sawled Construction Inc</h6>
@@ -202,28 +203,88 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="single-footer-widget contact_wd">
-                            <h6 class="footer_title" style="text-align: center;">Contact Us</h6>
-							<a href="tel:17808705710" style="font-size: 16px; text-align: center;">1(780)870-5710</a>	
-							<a href="mailto:sawledconstruction@outlook.ca" style="font-size: 16px; text-align: center;"target="_blank" rel="noopener noreferrer">sawledconstruction@outlook.ca</a>		
+                            <h6 class="footer_title" style="text-align: center; margin-bottom: 10px;">Contact Us</h6>
+							<a href="tel:17808705710" style="font-size: 18px; text-align: center; margin-bottom: 2px;">1(780)870-5710</a>	
+							<a href="mailto:sawledconstruction@outlook.ca" style="font-size: 18px; text-align: center;"target="_blank" rel="noopener noreferrer">sawledconstruction@outlook.ca</a>		
                         </div>
-                    </div>							
-                </div>
-                <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                    <p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script>
- All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true">
-</i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-
+					</div>						
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<form class="row contact_form" action="contact_process.php" method="post" 
+						id="contactForm" novalidate="novalidate">
+							<!-- <div class="col-lg-2"></div> -->
+							<div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+									<input type="text" class="form-control" id="name" name="name" 
+									placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+									<input type="email" class="form-control" id="email" name="email" 
+									placeholder="Enter email address">
+                                </div>
+                                <div class="form-group">
+									<input type="text" class="form-control" id="subject" name="subject" 
+									placeholder="Enter Phone">
+                                </div>
+							</div>
+							<!-- <div class="col-lg-2"></div> -->
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+									<textarea style="height: 89px;" class="form-control" name="message" id="message" rows="1" 
+									placeholder="Enter Message"></textarea>
+								</div>
+								<div style="height: 40px;">
+									<button style="margin-top: 0px; line-height: 38px; width: 100%;" type="submit" value="submit" class="btn submit_btn">Send Message</button>
+								</div>
+							</div>
+                        </form>
+                    </div>
+				</div>
+                <div style="padding-top: 120px;" class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-12 col-md-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+					All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true">
+					</i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				</div>
+            </div>
+		</footer>
+		  <!--================Contact Success and Error message Area =================-->
+		  <div id="success" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Thank you</h2>
+                        <p>Your message is successfully sent...</p>
+                    </div>
                 </div>
             </div>
-        </footer>
-		<!--================ End footer Area  =================-->
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        </div>
+
+        <!-- Modals error -->
+
+        <div id="error" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Sorry !</h2>
+                        <p> Something went wrong </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Contact Success and Error message Area =================-->
+		
+
+		
+							
+		 
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -237,6 +298,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.js"></script>
         <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
+		<script src="js/theme.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+        <!-- contact js -->
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>

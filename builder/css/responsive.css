@@ -40,7 +40,7 @@
 		min-height: 700px;
 	}
 	.home_banner_area .banner_inner {
-		min-height: 700px;
+		min-height: 500px;
 	}
 	/* End Home Banner Area css
 	============================================================================================ */
@@ -327,6 +327,7 @@
 	}
 	.main_title h2 {
 		font-size: 25px;
+		margin-top: 70px;
 	}
 	/* Elements Area css
 	============================================================================================ */
