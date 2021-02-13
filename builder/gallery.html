@@ -89,14 +89,16 @@
 				<div class="section-top-border">
 					<h3 style="margin-bottom: 20px; text-align: center;" class="title_color">Image Gallery</h3>
                     <div id="myBtnContainer" style="padding: 0px 26px; text-align: center;">
-                        <button id="toggle-btn" class="btn img-button active" onclick="filterSelection('all')"> Show all</button>
+                        <!-- <element onload="filterSelection('featured')"></element> -->
+                        <button id="toggle-btn" class="btn img-button active" onload="filterSelection('featured')">Featured</button>
                         <button id="toggle-btn" class="btn img-button" onclick="filterSelection('pole_shed')"> Pole Sheds</button>
                         <button id="toggle-btn" class="btn img-button" onclick="filterSelection('shop')"> Shops</button>
                         <button id="toggle-btn" class="btn img-button" onclick="filterSelection('house')"> Houses</button>
-                        <button id="toggle-btn" class="btn img-button" onclick="filterSelection('tech')"> Tech</button>
-                        <button id="toggle-btn" class="btn img-button" onclick="filterSelection('construction')"> Under Construction</button>
-                        <button id="toggle-btn" class="btn img-button" onclick="filterSelection('interior')"> Interiors</button>
-                        <button id="toggle-btn" class="btn img-button" onclick="filterSelection('exterior')"> Exteriors</button>
+                        <button id="toggle-btn" class="btn img-button" onclick="filterSelection('all')"> Show all</button>
+                        <!-- <button id="toggle-btn" class="btn img-button" onclick="filterSelection('tech')"> Tech</button> -->
+                        <!-- <button id="toggle-btn" class="btn img-button" onclick="filterSelection('construction')"> Under Construction</button> -->
+                        <!-- <button id="toggle-btn" class="btn img-button" onclick="filterSelection('interior')"> Interiors</button> -->
+                        <!-- <button id="toggle-btn" class="btn img-button" onclick="filterSelection('exterior')"> Exteriors</button> -->
                       </div>
 
 					<div class="row gallery-item">
