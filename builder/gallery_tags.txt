@@ -1,6 +1,0 @@
-pole_shed
-shop
-house
-tech
-under_construction
-interior
