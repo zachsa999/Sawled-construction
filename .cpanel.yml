@@ -1,5 +1,17 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/zachw/repositories/Sawled-construction1
-    - /bin/cp gallery.html $DEPLOYPATH
+    - export DEPLOYPATH=/home/zachw/sawled.zachw.ca
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R fonts $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R scss $DEPLOYPATH
+    - /bin/cp -R unused $DEPLOYPATH
+    - /bin/cp -R vendors $DEPLOYPATH
+    - /bin/cp *.html $DEPLOYPATH
+    - /bin/cp *.jpg $DEPLOYPATH
+    - /bin/cp *.jpeg $DEPLOYPATH
+    - /bin/cp *.php $DEPLOYPATH
+    - /bin/cp *.config $DEPLOYPATH
+    - /bin/cp *.png $DEPLOYPATH
