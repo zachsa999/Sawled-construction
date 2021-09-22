@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/zachw/repositories/Sawled-construction1
-    - /bin/cp -a * $DEPLOYPATH
+    - /bin/cp gallery.html $DEPLOYPATH
