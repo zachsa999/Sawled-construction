@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/zachw/sawled.zachw.ca
+    - export DEPLOYPATH=/home/zachw/sawled.zachw.ca/
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R fonts $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
